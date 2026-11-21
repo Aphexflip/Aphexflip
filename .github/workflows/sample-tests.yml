@@ -1,0 +1,32 @@
+name: Public code sample tests
+
+on:
+  push:
+    paths:
+      - 'samples/rsymo-control-core/**'
+      - '.github/workflows/sample-tests.yml'
+  pull_request:
+    paths:
+      - 'samples/rsymo-control-core/**'
+      - '.github/workflows/sample-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run example tests
+        working-directory: samples/rsymo-control-core
+        run: npm test
+      - name: Run example without network or credentials
+        working-directory: samples/rsymo-control-core
+        run: npm run demo
