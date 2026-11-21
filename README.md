@@ -1,5 +1,11 @@
 # Erik Erling
 
+**I spend my life figuring out how complicated systems work, why they fail, and what we could build if we remove the limits.**
+
+### [Why I Build: the person, the questions, and the work behind my projects](WHY_I_BUILD.md)
+
+*This is the best place to start if you want to know what drives me.*
+
 **Industrial engineering • AI software development • Real systems, practical experiments**
 
 I spent more than 19 years working with complex industrial equipment, troubleshooting failures, supporting customers and training people. My background includes advanced manufacturing, metal 3D printing, CNC equipment, automation and instrumentation.
